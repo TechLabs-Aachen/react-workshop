@@ -39,7 +39,7 @@ if it would work) that would make it more difficult... What we want it something
 similar to what the `<img />` element in HTML already can!
 
 So we want something like this `<Greeting username="John" />`. This way, we can
-focus on making the `Greeing` components while others can use it by just pluging
+focus on making the `Greeing` components while others can use it by just plug
 in the `username` **Property**.
 
 ## React Properties
@@ -58,7 +58,7 @@ function Greeting(props) {
 
 Yeah, that's it... Note that our function now takes an argument `props`. We
 could have named it anything we want but `props` is like how everybody does it.
-In our HTML we can then use `props` to get to the `username`.
+In our HTML we can then use `props.username` to get to the `username`.
 
 This looks simple, BUT it can quickly fuck your code up. Why? Because we may 
 have not communicate it well with others on what `props` we actually accept.  A
@@ -85,9 +85,17 @@ const obj = {
 With that we know, why we could do `props.username`. Because React will
 take every Property we throw in the component  (here e.g. username, age, sex)
 
-`<Greeting username=".." age=29 sex="female" />`
+`<Greeting username="Lana" age=29 sex="female" />`
 
-and make it a field in our `props` object.
+and make it a field in our `props` object. So props would look like this:
+
+```javascript
+cons props = {
+    username: "Lana",
+    age: 29,
+    sex: "female"
+}
+```
 
 ## Getting data into props
 
@@ -129,7 +137,7 @@ which would be equal to `<Greeting username="John!" />>`
 
 ## Destructing props
 
-No why would you want to break props? They are so helpful! No worries,
+No, why would you want to break props? They are so helpful! No worries,
 destructing means something different here. Imagine we have like a lot of props
 fields. For example: 
 
