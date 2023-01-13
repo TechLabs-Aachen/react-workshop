@@ -47,3 +47,9 @@ components and pass around properties. BUT you are not done. There is more to
 it. For example, we can control how things are rendered for the user. This could
 be really usefull to create interesting website. Check it out in the chapter
 about [Rendering](./react-basics/rendering/rendering.md).
+
+If you reached this point, you should pretty much have a good understanding of
+the way react takes a component and makes HTML out of it. However, I promised
+that react is actually about State management and that changes to the State
+would *magically* apply changes to our components. For this we will first
+introduce the concept of [Hooks](./react-basics/hooks/hooks.md).
