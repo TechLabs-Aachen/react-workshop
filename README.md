@@ -41,3 +41,9 @@ React components and HTML elements. But you may remember the HTML element
 Well this looks different than a normal `<div>` because it takes a weird thingy 
 `src` which you can assign an url to. Learn more about it in the chapter about
 [Properties](./react-basics/props/props.md).
+
+Great, we know how to make things really reusable now by putting it into
+components and pass around properties. BUT you are not done. There is more to
+it. For example, we can control how things are rendered for the user. This could
+be really usefull to create interesting website. Check it out in the chapter
+about [Rendering](./react-basics/rendering/rendering.md).
