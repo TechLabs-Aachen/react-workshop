@@ -13,6 +13,14 @@ anything useful with this. Or at least I do not expect to. We will show how to
 make use of this theory in the workshop! It's is for you the be able to explain
 the things that will happen.
 
+## How to read.
+
+Read it like a book (top to bottom, left to right, why am I explaining this).
+However, there will be some text that are Links like [>> This
+<<](https://www.youtube.com/watch?v=dQw4w9WgXcQ). At this points, you shall
+follow the Link (by Clicking it, omg you aint stupid) and come back once you
+read that chapter. 
+
 ## Guide
 
 First, I would advise you to have a look into [History of Frontend
@@ -22,3 +30,14 @@ things are the way they are and why it will probably not stay that way.
 Now, that you know the pain of front end development, we shall introduce the
 basics of react, that is how to make simple *components*. For this checkout this
 chapter about [React Components](./react-basics/components/components.md).
+
+We should know be able to understand the understand the relationship between
+React components and HTML elements. But you may remember the HTML element
+
+```html
+<img src="some url"/>
+```
+
+Well this looks different than a normal `<div>` because it takes a weird thingy 
+`src` which you can assign an url to. Learn more about it in the chapter about
+[Properties](./react-basics/props/props.md).
