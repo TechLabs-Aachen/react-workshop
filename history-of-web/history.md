@@ -168,15 +168,15 @@ it).
 What React does it, it makes an abstract copy of that `DOM` called a `Virtual
 DOM` or `VDOM`. With that in mind, React starts to operate on the `VDOM` - again
 JUST internal data representation. They add internal functions on how to *convert* 
-changes on that `VDOM` to the `DOM` which than updates the things we can see!
+changes on that `VDOM` to the `DOM` which than updates the HTML we can see!
 
 So, How do we Programm that `VDOM`? That is, how do we update the State such
 that React knows how to update `DOM` properly? This will be answered in the
 chapter about React Basics!
 
 One thing to note here tho: We just started to render on the client/browser! We
-know, do not let the webserver change the HTML but we do it with React in the
-browser of our client! This is also called *Client-Side-Rendering*.
+do not let the webserver change the HTML but we change the HTML with React in the
+browser of our User! This is also called *Client-Side-Rendering*.
 
 ## The Future?
 
