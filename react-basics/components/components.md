@@ -86,7 +86,8 @@ Whenever we know use `<I_am_a_function />` in React, it will then render to
 </div>
 ```
  
-in our browser.
+in our browser. I will just leave it a black box how react actually does that
+but it works.
 
 Yeah, it's that simple.
 
