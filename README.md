@@ -16,10 +16,10 @@ the things that will happen.
 ## How to read.
 
 Read it like a book (top to bottom, left to right, why am I explaining this).
-However, there will be some text that are Links like [>> This
-<<](https://www.youtube.com/watch?v=dQw4w9WgXcQ). At this points, you shall
-follow the Link (by Clicking it, omg you aint stupid) and come back once you
-read that chapter. 
+However, there will be some text that are Links like [ This
+](https://www.youtube.com/watch?v=dQw4w9WgXcQ). At this points, you shall follow
+the Link (by Clicking it, omg you aint stupid) and come back once you read that
+chapter. 
 
 ## Guide
 
