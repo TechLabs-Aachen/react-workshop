@@ -53,3 +53,8 @@ the way react takes a component and makes HTML out of it. However, I promised
 that react is actually about State management and that changes to the State
 would *magically* apply changes to our components. For this we will first
 introduce the concept of [Hooks](./react-basics/hooks/hooks.md).
+
+Nice now we can rerender HTML according to the state of our app/website. BUT
+where do we get the data from?? Probably from the internet, or more specifically
+from our backend server. Hence, we need to talk about how to get data 
+in our [Data Fetching](./react-basics/fetching/fetching.md) chapter.
