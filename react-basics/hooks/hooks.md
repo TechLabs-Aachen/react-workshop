@@ -12,6 +12,10 @@ function Component() {
 }
 ```
 
+> The notion of `() => {...}` is just the short form of `function () {...}`. So
+here, we assign a function to the `onClick` Property. This property is provided
+by `button` on default and will be triggered on each click.
+
 Soooo, long shot. If we click this button, we would increment the variable
 `counter` by one. What do you think would happen when we display it with
 `{counter}` as we do it inside the button. You would think, *Well, it should

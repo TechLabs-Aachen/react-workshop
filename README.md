@@ -1,4 +1,4 @@
-# THEROY of React 
+# THEORY of React 
 
 Hi, welcome to the React Workshop! This should give you a good basic theory of
 React that will allow you to pretty much understand everything happening at our
