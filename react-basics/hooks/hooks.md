@@ -16,6 +16,12 @@ function Component() {
 here, we assign a function to the `onClick` Property. This property is provided
 by `button` on default and will be triggered on each click.
 
+
+> Trivia: I just introduce the concept of controlled components without saying
+it: A controlled component has some user interaction (here clicking a button)
+which changes the state of the component (here the counter variable). It's
+nothing special but yeah, now you know how to name this concept, too!
+
 Soooo, long shot. If we click this button, we would increment the variable
 `counter` by one. What do you think would happen when we display it with
 `{counter}` as we do it inside the button. You would think, *Well, it should
