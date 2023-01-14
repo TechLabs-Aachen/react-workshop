@@ -189,4 +189,10 @@ you write these queries as well as implement the backend and types. So, dont
 worry if these queries look intimidating to write. There are tools that will
 help you with it and they make it extremely hard to break things.
 
+### Data Mutation?
+
+Yeah, we actually should also talk about how to change data in the backend from
+the frontend right? True! But I will skip this since it is not that important
+for the project. 
+
 Back to the main page!
