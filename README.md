@@ -58,3 +58,15 @@ Nice now we can rerender HTML according to the state of our app/website. BUT
 where do we get the data from?? Probably from the internet, or more specifically
 from our backend server. Hence, we need to talk about how to get data 
 in our [Data Fetching](./react-basics/fetching/fetching.md) chapter.
+
+You made it! You reached the End-Game. This last section will connect
+everything. In the beginning, we always assumed that somehow, we just have some
+data on the user's browser already. We used that data to inject it into the
+components. This cannot be true because **Where did the data came from?**. 
+Later we used Hooks to connect data (the State of our App) to the rendering
+process of our website. But still, data was still somehow there. Then we talked
+about how to get the dat, but .... **What do you do with that data?** Now, we
+will finally make this connection.  That is, we connect data fetching with react
+hooks! This is what WebDevelopment is all about. Getting data and make it look
+nice! I will explain it in the chapter about [Combining Fetching and
+Displaying](./react-basics/fetching/display.md).
