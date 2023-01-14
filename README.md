@@ -70,3 +70,9 @@ will finally make this connection.  That is, we connect data fetching with react
 hooks! This is what WebDevelopment is all about. Getting data and make it look
 nice! I will explain it in the chapter about [Combining Fetching and
 Displaying](./react-basics/fetching/display.md).
+
+Try to really understand and be able to reason about the theory of react.  Using
+this knowledge, we shall build a cool project during our workshop and surely
+also for our project.
+
+Cheers!
