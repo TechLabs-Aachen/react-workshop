@@ -23,6 +23,8 @@ also update to be the new value!*. This is why we used React in the first
 place, didnt we? Haha Facebook sends their regards! Of course it does not work
 this way.
 
+<img src="https://i.imgflip.com/77h64t.jpg" width="600"/>
+
 This is why we need Hooks! To connect **Data that changes to the change we want
 to make in the HTML**. I will introduce the most common Hooks! Funny enough,
 Facebook sold React as the solution to handle this specific issue in the first
