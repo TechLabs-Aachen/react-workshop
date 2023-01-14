@@ -70,6 +70,8 @@ this!
 ## The useEffect Hook
 
 Well, the useEffect Hook is in a weird place. It's kinda useless most of the
-time.  But you need it once in a while. At this point you should go back to the
-main book page and come back to this once you read the section about data
-fetching. 
+time. I may expand this section later but for now, just know that it exits and
+it can be used to create "side effects" which is just fancy word for running
+some random javascript. Yeah, you bascially "inject" Javascript to your
+component. Dont worry if you dont get this. We may encounter a good example
+where this is useful later on.
