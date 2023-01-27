@@ -111,8 +111,36 @@ type_defs = gql("""
         products: [Product!]!
         skip:Int!
     }
+    enum SearchCriterions {
+        brands 
+        categories 
+        packaging 
+        labels 
+        origins 
+        manufacturing_places 
+        emb_codes 
+        purchase_places 
+        stores 
+        countries 
+        additives
+        allergens
+        traces 
+        nutrition_grades 
+        states 
+    }
+    enum SearchCriterionsOp {
+        contains
+        does_not_contain
+    }
+    
+    input SearchParams {
+        search: String
+        criterions: [SearchCriterions!]
+        criterions_op: [SearchCriterionsOp!]
+        criterions_val: [String!]
+    }
     type Query {
-        searchProduct: SearchProductResult
+        searchProduct(params: SearchParams): SearchProductResult
     }
 """)
 
@@ -120,14 +148,25 @@ query = QueryType()
 searchProductResults = ObjectType("SearchProductResult")
 product = ObjectType("Product")
 nutriments = ObjectType("Nutriments")
-
+searchParameters = ObjectType("SearchParams")
 class FoodQueryBuilder:
-    def simple_query():
-        q = openfoodfacts.products.advanced_search({
-                "search_terms": "nutella",
-                "sort_by": "unique_scans_n",
-                "page_size": "20",
-        })
+    def perform_query(searchParams: dict):
+        query_dict = {
+            "search_terms": searchParams.get("search", None),
+            "sort_by": "unique_scans_n",
+            "page_size": "20",
+        }
+        if "criterions" in searchParams and "criterions_op" in searchParams and "criterions_val" in searchParams:
+                if (len(searchParams["criterions"]) != len(searchParams["criterions_val"]) or
+                    len(searchParams["criterions"]) != len(searchParams["criterions_op"])):
+                        return {}
+                i = 0
+                for crit, op, val in zip(searchParams["criterions"], searchParams["criterions_op"], searchParams["criterions_val"]):
+                    query_dict[f"tagtype_{i}"] = crit
+                    query_dict[f"tag_contains_{i}"] = op
+                    query_dict[f"tag_{i}"] = val
+
+        q = openfoodfacts.products.advanced_search(query_dict)
         return q
 
 @nutriments.field("energy_100g")
@@ -261,8 +300,8 @@ def resolve_sPR_page_products(obj, _):
 
 
 @query.field("searchProduct")
-def resolve_searchProduct(_, info):
-    query = FoodQueryBuilder.simple_query()
+def resolve_searchProduct(_, info, params=None):
+    query = FoodQueryBuilder.perform_query(params)
     return query
 
 
