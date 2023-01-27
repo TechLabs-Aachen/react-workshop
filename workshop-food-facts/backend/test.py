@@ -12,9 +12,7 @@ def search_product():
     print(pick["products"][0].keys())
     lookups = ["code", "image_small_url", "image_url", "generic_name",
                "product_name", "quantity", "packaging", "labels",
-               "brands", "nutriscore_data", "nutriscore_grade", "environment_impact_level", 
-               "environment_impact_level_tags", "carbon_footprint_percent_of_known_ingredients", 
-               "nutriments"
+               "brands", "nutriscore_grade", "nutriments"
                ]
 
     for lookup in lookups:
@@ -22,7 +20,8 @@ def search_product():
             print(lookup, pick["products"][0][lookup])
         except Exception as err:
             print(f"Error bruh{err}")
+
     import json
-    #print(json.dumps(pick["products"][0], indent=2, sort_keys=True))
+    print(json.dumps(pick["products"][0], indent=2, sort_keys=True))
 
 search_product()
