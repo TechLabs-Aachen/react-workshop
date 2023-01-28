@@ -1,6 +1,6 @@
 # React Workshop
 Erster: Kilian
-Aleksandra
+Hello, Aleksandra
 >Whoops, this looks different than the last time I visit. Yeah, I changed the
 structure.
 
