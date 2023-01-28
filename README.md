@@ -1,5 +1,5 @@
 # React Workshop
-
+Erster: Kilian
 >Whoops, this looks different than the last time I visit. Yeah, I changed the
 structure.
 
