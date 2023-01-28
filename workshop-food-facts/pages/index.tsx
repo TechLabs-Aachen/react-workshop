@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
@@ -20,6 +21,10 @@ import { useState, useEffect } from 'react';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
+import Items from '@/components/items'
+
+
+
 
 
 
@@ -64,6 +69,12 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function PrimarySearchAppBar() {
+
+ const mockData = [
+    { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Nutella', quantity: '400g' },
+    { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Banane', quantity: '1kg' },
+    { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Dead', quantity: '0g' }
+  ]
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     React.useState<null | HTMLElement>(null);
@@ -226,8 +237,11 @@ export default function PrimarySearchAppBar() {
       {renderMenu}
     </Box>
       <div>your input: {searchValue}</div>
+      <Items data={mockData}></Items>
     </div>
     
     
   );
 }
+
+
