@@ -8,12 +8,14 @@ import { useState, useEffect } from 'react';
 
 
 
-export default function Headbar () {
-    const [searchValue, setSearchValue] = useState("")
+export default function Headbar ({searchValue, setSearchValue}) {
+    const [searchValue2, setSearchValue2] = useState(searchValue)
 
 
     function handleSubmit(searchValue: String) {
         console.log(searchValue)
+        setSearchValue2(searchValue)
+         
     }
 
     return ( 
@@ -38,6 +40,7 @@ export default function Headbar () {
                         label="Search"
                     />
             </FormControl>
+            <div>debug var: {searchValue2}</div>
         </div>
      
      );

@@ -10,14 +10,15 @@ import Headbar from '../components/Headbar'
 
 
 
-export default function PrimarySearchAppBar() {
-  //const [searchValue, setSearchValue] = useState("")
+export default function Home() {
+  const [searchValue, setSearchValue] = useState("ab")
   const mockData = [
       { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Nutella', quantity: '400g' },
       { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Banane', quantity: '1kg' },
       { Url: 'https://images.openfoodfacts.org/images/products/544/900/000/0996/front_en.676.200.jpg', name: 'Dead', quantity: '0g' }
     ]
  
+
     
   return (
     <div>
@@ -30,7 +31,8 @@ export default function PrimarySearchAppBar() {
             <Typography variant="h6" noWrap component="div" sx={{ display: { xs: 'none', sm: 'block' } }}>
               MUI
             </Typography>
-            <Headbar/>                
+            <Headbar searchValue={searchValue} setSearchValue={setSearchValue} ></Headbar>   
+            <div>Debug var: {searchValue}</div>            
           </Toolbar>
         </AppBar>                
       </Box>      

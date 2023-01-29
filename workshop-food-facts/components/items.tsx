@@ -9,7 +9,7 @@ import { useState } from 'react';
 export default function Items(props: { data: any; }) {
 
     const [data, setdata] = useState(props.data)
-    console.log(props.data)
+   // console.log(props.data)
     const showItems = () => {
         var item = []
         for (let i = 0; i < data.length; i++) {
